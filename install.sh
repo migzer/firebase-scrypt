@@ -4,7 +4,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         brew install openssl
         export PATH="/usr/local/opt/openssl/bin:$PATH"
-        export LDFLAGS="-L/usr/local/opt/openssl/lib
+        export LDFLAGS="-L/usr/local/opt/openssl/lib"
         export CPPFLAGS="-I/usr/local/opt/openssl/include"
 fi
 
