@@ -3,7 +3,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         sudo apt install libssl-dev
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         brew install openssl
-	echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.zshrc
+	echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bashrc
 	export LDFLAGS="-L/usr/local/opt/openssl/lib"
 	export CPPFLAGS="-I/usr/local/opt/openssl/include"
 fi
