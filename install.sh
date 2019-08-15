@@ -3,12 +3,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         sudo apt install libssl-dev
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         brew install openssl
-	echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bashrc
-	echo 'export LDFLAGS="-L/usr/local/opt/openssl/lib"' >> ~/.bashrc
-	echo 'export CPPFLAGS="-I/usr/local/opt/openssl/include"' >> ~bashrc
-        echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.zshrc
-        echo 'export LDFLAGS="-L/usr/local/opt/openssl/lib"' >> ~/.zshrc
-        echo 'export CPPFLAGS="-I/usr/local/opt/openssl/include"' >> ~/.zshrc
+        export PATH="/usr/local/opt/openssl/bin:$PATH"
+        export LDFLAGS="-L/usr/local/opt/openssl/lib
+        export CPPFLAGS="-I/usr/local/opt/openssl/include"
 fi
 
 echo '  [x] Install automake'
